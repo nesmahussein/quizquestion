@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/linear_style"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_question" />
+
+                <RadioGroup
+                    android:id="@+id/rdGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/apk_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioFirstQuestionClick"
+                        android:paddingLeft="16dp"
+                        android:text="@string/apk"/>
+
+                    <RadioButton
+                        android:id="@+id/ide_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioFirstQuestionClick"
+                        android:paddingLeft="16dp"
+                        android:text="@string/ide"/>
+
+                    <RadioButton
+                        android:id="@+id/jdk_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioFirstQuestionClick"
+                        android:paddingLeft="16dp"
+                        android:text="@string/jdk"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/linear_style"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secondQuestion" />
+
+                <RadioGroup
+                    android:id="@+id/rdGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/classes_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioSecondQuestion"
+                        android:paddingLeft="16dp"
+                        android:text="@string/classes"/>
+
+                    <RadioButton
+                        android:id="@+id/objects_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioSecondQuestion"
+                        android:paddingLeft="16dp"
+                        android:text="@string/object"/>
+
+                    <RadioButton
+                        android:id="@+id/methods_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:onClick="OnRadioSecondQuestion"
+                        android:paddingLeft="16dp"
+                        android:text="@string/methods"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/linear_style"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_question" />
+
+                <RadioGroup
+                    android:id="@+id/rdGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/text_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/text"
+                        android:onClick="OnRadioThirdQuestion"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/text_color_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/text_color"
+                        android:onClick="OnRadioThirdQuestion"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/color_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="16dp"
+                        android:text="@string/color"
+                        android:onClick="OnRadioThirdQuestion"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/linear_style"
+
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forth_question" />
+
+                <CheckBox
+                    android:id="@+id/classes_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/classes"
+                    android:onClick="checkBoxQuestionFour"/>
+
+                <CheckBox
+                    android:id="@+id/intent_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/intent"
+                    android:onClick="checkBoxQuestionFour"/>
+
+                <CheckBox
+                    android:id="@+id/resource_externalization_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/resource_externalization"
+                    android:onClick="checkBoxQuestionFour"/>
+
+                <CheckBox
+                    android:id="@+id/services_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/services"
+                    android:onClick="checkBoxQuestionFour"/>
+
+                <CheckBox
+                    android:id="@+id/task_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/task"
+                    android:onClick="checkBoxQuestionFour"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/linear_style"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifth" />
+
+                <CheckBox
+                    android:id="@+id/marshmallow_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/Marshmallow"
+                    android:onClick="checkBoxQuestionFive"/>
+
+                <CheckBox
+                    android:id="@+id/moro_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/moro"
+                    android:onClick="checkBoxQuestionFive"/>
+
+                <CheckBox
+                    android:id="@+id/sweet_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/sweet"
+                    android:onClick="checkBoxQuestionFive"/>
+
+                <CheckBox
+                    android:id="@+id/donut_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/donut"
+                    android:onClick="checkBoxQuestionFive"/>
+
+                <CheckBox
+                    android:id="@+id/cupcake_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/cupcake"
+                    android:onClick="checkBoxQuestionFive"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="64dp"
+                android:background="@drawable/linear_style"
+                android:orientation="vertical"
+
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sixth_question" />
+
+                <EditText
+                    android:id="@+id/answer_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/write_your_answer"
+                    android:paddingLeft="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/submit_style"
+            android:onClick="submit"
+            android:padding="16dp"
+            android:text="@string/submit"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/submit_style"
+            android:onClick="reset"
+            android:padding="16dp"
+            android:text="@string/Reset"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</ScrollView>

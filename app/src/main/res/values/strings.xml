@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">QuizAPP</string>
+    <string name="first_question"> Package of compiled Java codes with some other resources is called</string>
+    <string name="ide">IDE</string>
+    <string name="apk">APK</string>
+    <string name="jdk">JDK</string>
+
+    <string name="secondQuestion">When classes are divided into many parts to achieve different functionalists is called</string>
+    <string name="classes">Classes</string>
+    <string name="methods">Methods</string>
+    <string name="object">Objects</string>
+
+    <string name="third_question">Property that is used for change font color</string>
+    <string name="text">text</string>
+    <string name="text_color">textColor</string>
+    <string name="color">Color</string>
+
+    <string name="forth_question">What is the Android Application Architecture?</string>
+    <string name="services">Services </string>
+    <string name="intent">Intent</string>
+    <string name="resource_externalization">Resource Externalization</string>
+    <string name="task">Task</string>
+
+    <string name="fifth">What are the code names of android?</string>
+    <string name="cupcake">Cupcake </string>
+    <string name="donut">Donut</string>
+    <string name="Marshmallow">Marshmallow</string>
+    <string name="moro">Moro</string>
+    <string name="sweet">Sweet</string>
+
+
+    <string name="sixth_question">What is an application resource file?</string>
+    <string name="write_your_answer">Write Your Answer</string>
+    <string name="question_answer">Resources are the additional files and static content that your code uses, such as bitmaps, layout definitions, user interface strings, animation instructions, and more.</string>
+    <string name="submit">Submit</string>
+    <string name="Reset">Reset</string>
+    <string name="score">Your Score</string>
+    <string name="number">1</string>
+
+
+
+</resources>
